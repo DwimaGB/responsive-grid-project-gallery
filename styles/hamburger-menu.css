@@ -1,0 +1,25 @@
+
+
+.hamburger .bar{
+    background-color: black;
+    height: 4px;
+    width: 36px;
+    margin: 6px;
+    border-radius: 10px;
+    
+    transform-origin: center;
+    transition: transform 400ms;
+}
+
+.mobile-nav-toggle[aria-expanded="true"] .bar-middle{
+    transform: scaleX(0);
+}
+
+.mobile-nav-toggle[aria-expanded="true"] .bar-top{
+    transform: translateY(10px) rotate(45deg);
+}
+
+.mobile-nav-toggle[aria-expanded="true"] .bar-bottom{
+    transform: translateY(-10px) rotate(-45deg);
+}
+
