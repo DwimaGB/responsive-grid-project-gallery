@@ -4,7 +4,6 @@ const primaryNav = document.querySelector('.primary-navigation');
 
 navToggleBtn.addEventListener('click', ()=>{
     const isVisible = primaryNav.getAttribute('data-visible');
-    console.log(isVisible);
 
     if(isVisible == 'true'){
         primaryNav.setAttribute('data-visible', 'false');
